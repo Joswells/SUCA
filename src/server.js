@@ -14,5 +14,3 @@ server.use(routes);
 var porta = process.env.PORT || 8080;
 server.listen(porta);
 
-server.listen(porta);
-
