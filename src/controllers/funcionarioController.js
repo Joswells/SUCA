@@ -9,10 +9,12 @@ module.exports = {
         .catch (err => console.log(err));  
     },
     async store(req, res) {
-        const { nome } = req.body
+        const { nome, funcao, setor } = req.body
         const funcionario = await Funcionario.create({
             nome,
             presente: false,
+            funcao: "",
+            setor: "",
             entrada: null,
             acessos: []
         })

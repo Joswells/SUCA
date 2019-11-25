@@ -5,18 +5,23 @@ const FuncionarioSchema= new Schema({
         type: String,
         required: true,
     },
+    funcao: {
+        type: String,
+        required: true
+    },
+    setor: {
+        type: String,
+        required: true
+    },
     presente: {
         type: Boolean
     },
     entrada: {
         type: Date,
-        required: false
     },
-    acessos: [{
+    acessos: {
         type: Array
-    }]
-},{
-    timestamps: true
+    }
 })
 
 module.exports =  model("funcionario", FuncionarioSchema)
