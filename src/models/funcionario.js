@@ -6,12 +6,10 @@ const FuncionarioSchema= new Schema({
         required: true,
     },
     funcao: {
-        type: String,
-        required: true
+        type: String
     },
     setor: {
-        type: String,
-        required: true
+        type: String
     },
     presente: {
         type: Boolean
