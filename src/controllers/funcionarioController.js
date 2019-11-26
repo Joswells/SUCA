@@ -13,8 +13,8 @@ module.exports = {
         const funcionario = await Funcionario.create({
             nome,
             presente: false,
-            funcao: "",
-            setor: "",
+            funcao,
+            setor,
             entrada: null,
             acessos: []
         })
