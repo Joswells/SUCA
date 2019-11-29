@@ -27,7 +27,7 @@ API do projeto SUCA, responsavel pelos servicos de:
 	- Alterar informações do usuario( Nome, Função, Setor)
 
 		- url: PUT "https://suca-a.herokuapp.com/funcionario"
-		- Body: { nome: String(Required), funcao: String(Required), setor: String(Required) }
+		- Body: { nome: String, funcao: String, setor: String }
 
 	- Deletar funcionarios
 	
