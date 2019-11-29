@@ -6,10 +6,12 @@ const FuncionariosPresentes = require('./controllers/presentesController');
 const routes = express.Router();
 
 routes.get('/funcionarios', FuncionarioController.index);
-routes.post('/funcionarios', FuncionarioController.store);
+routes.post('/funcionario/info', FuncionarioController.getOne)
+routes.get('/funcionario/:funcionarioID/entradaSaida', entradaSaidaController.store );
+routes.delete('/funcionario', FuncionarioController.delete)
+
+routes.post('/funcionario', FuncionarioController.store);
 routes.put('/funcionario', FuncionarioController.put);
-routes.post('/funcionario/:funcionarioID/entradaSaida', entradaSaidaController.store );
-routes.delete('/funcionarios', FuncionarioController.delete)
 
 routes.get('/funcionarios/presentes', FuncionariosPresentes.index)
 
